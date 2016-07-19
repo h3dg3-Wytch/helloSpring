@@ -1,0 +1,24 @@
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = 'hello.Application'
+
+dependencies {
+    compile 'org.springframework:spring-context:4.3.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-core', version: '4.3.1.RELEASE'
+    testCompile("org.springframework:spring-test:4.3.1.RELEASE")
+}
+jar {
+    manifest {
+        attributes(
+                'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+                'Main-Class': 'hello.Application'
+        )
+    }
+}

@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: spring-context-4.3.1.RELEASE.jar spring-core-4.3.1.RELEASE
+ .jar spring-aop-4.3.1.RELEASE.jar spring-beans-4.3.1.RELEASE.jar spri
+ ng-expression-4.3.1.RELEASE.jar commons-logging-1.2.jar
+Main-Class: hello.Application
+
