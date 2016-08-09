@@ -1,0 +1,32 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formless in Seattle</title>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <form action="#" th:action="@{/home}" th:object="${user}" method="post">
+        <table>
+            <tr>
+                <td>First Name:</td>
+            </tr>
+            <tr>
+                <td>Last Name: </td>
+            </tr>
+            <tr>
+                <td>E-mail </td>
+            </tr>
+            <tr>
+                <td>UserName</td>
+            </tr>
+            <tr>
+                <td>Password</td>
+            </tr>
+            <tr>
+                <td>Re-Enter Password</td>
+            </tr>
+      </table>
+    </form>
+</body>
+</html>
