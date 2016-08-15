@@ -11,9 +11,9 @@ import java.util.List;
  */
 @Component
 public class UserJDBCTemplate implements UserDAO {
-
-    @Autowired
-   JdbcTemplate jdbcTemplate;
+//
+//    @Autowired
+//   JdbcTemplate jdbcTemplate;
 
     @Override
     public void create(String name, Integer age) {

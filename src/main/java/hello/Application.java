@@ -18,7 +18,8 @@ import java.util.stream.Collectors;
 @SpringBootApplication
 public class Application{
 
-
+    @Autowired
+    ContactDAO contactDAO;
     private static final Logger log = LoggerFactory.getLogger(Application.class);
 
 
