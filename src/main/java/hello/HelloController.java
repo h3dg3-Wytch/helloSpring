@@ -26,7 +26,11 @@ public class HelloController {
         for(Contact contact : contacts){
             System.out.println(contact.getName());
         }
+
+        Contact contact = contactDAO.get(1);
+        
         model.addAttribute("contactList", contactDAO);
+        model.addAttribute("contact", contact);
         model.addAttribute("greeting", new Greeting());
         return "greeting";
     }

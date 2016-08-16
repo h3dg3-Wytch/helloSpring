@@ -13,16 +13,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class IndexController {
 
-    @RequestMapping(value =  "/", method=RequestMethod.GET)
-    public String salutations(@RequestParam(value = "name", required = false, defaultValue = "World") String name, Model model){
-        model.addAttribute("user", new User());
-        return "salutations";
-    }
-
-    @RequestMapping(value =  "/", method=RequestMethod.POST)
-    public String salutationsSubmit(@ModelAttribute User user, Model model){
-        model.addAttribute("user", user);
-        return "results";
-    }
+//    @RequestMapping(value =  "/", method=RequestMethod.GET)
+//    public String salutations(@RequestParam(value = "name", required = false, defaultValue = "World") String name, Model model){
+//        model.addAttribute("user", new User());
+//        return "salutations";
+//    }
+//
+//    @RequestMapping(value =  "/", method=RequestMethod.POST)
+//    public String salutationsSubmit(@ModelAttribute User user, Model model){
+//        model.addAttribute("user", user);
+//        return "results";
+//    }
 
 }
